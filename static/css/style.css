@@ -21,6 +21,23 @@ dt {
   font-size: 1.2em;
 }
 
+/* Style the leaflet controls */
+.leaflet-control-layers-list {
+  margin-right: 4px;
+}
+
+.leaflet-control-layers-base {
+  margin-left: 6px;
+}
+
+.leaflet-control-container {
+  font-family: "Sanchez", Georgia, "Times New Roman", Times, serif;
+}
+
+#leaflet-control-layers-group-1 {
+  margin-left: 15px;
+}
+
 #bottom-text {
   font-size: 12px;
   text-align: center;
@@ -52,7 +69,17 @@ dt {
   margin: 0.5em 0; 
 }
 
-/*BLUR*/
+/* BLUR */
+.inner-image {
+  position: absolute;
+  top: -5px;
+  right: 10px;
+}
+
+.blur {
+  position: relative;
+}
+
 .blur img {
   -webkit-transition: all 1s ease;
      -moz-transition: all 1s ease;
@@ -62,7 +89,7 @@ dt {
 }
  
 .blur img:hover {
-  -webkit-filter: blur(2px);
+  -webkit-filter: blur(1px);
 }
 
 
