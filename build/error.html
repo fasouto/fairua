@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="./static/favicon.ico"> 
+
+    <link rel="stylesheet" href="./static/css/style.css" />
+    <!-- http://getbootstrap.com/customize/?id=be5b8e8bc1d07f26932f -->
+    <link rel="stylesheet" href="./static/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" href="./static/js/fancybox/source/jquery.fancybox.css" />
+    <link rel="stylesheet" href="./static/leaflet/leaflet.groupedlayercontrol.min.css" />
+    <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link href='http://fonts.googleapis.com/css?family=Sanchez' rel='stylesheet' type='text/css'>
+    
+    
+    <title>Fairua, descobre o Casco Vello Alto de Vigo</title>
+    
+
+</head>
+<body>
+
+    <div id="wrapper">
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="/">
+                        <img id="logo" class="img-responsive" src="./static/img/logo.png">
+                    </a>
+                </li>
+                <li><a href="#proxecto" class="links">PROXECTO</a></li>
+                <li><a href="#navegacion" class="links">NAVEGACIÓN</a></li>
+                <li><a href="#asociacion" class="links">ASOCIACIÓN</a></li>
+                <li><a href="#doazons" class="links">DOAZÓNS</a></li>
+                <li><a href="#contacto" class="links">CONTACTO</a></li>
+                <li><a href="#creditos" class="links">CRÉDITOS</a></li>
+            </ul>
+
+
+
+            <div id="bottom-text" class="pull-down">
+                <p class="social">
+                    COMPARTE #FAIRÚA:
+                    <ul id="social-icons">
+                        <li><a href=""><img src="./static/img/social/facebook_round.png" class="img-responsive"></a></li>
+                        <li><a href=""><img src="./static/img/social/twitter_round.png" class="img-responsive"></a></li>
+                        <li><a href=""><img src="./static/img/social/mail_round.png" class="img-responsive"></a></li>
+                    </ul>
+                </p>
+                <p><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es_ES"><img src="./static/img/by-nc-nd.png" class="cc-image"></a>
+                <p><a href="https://www.facebook.com/cascovelloaltovigo">Asociación Cultural Barrio Alto do Casco Vello de Vigo</a>
+            </div>
+        </div>
+        <div id="page-content-wrapper">
+        
+<script type="text/javascript" charset="utf-8" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		
+		// Add the missing url to the text
+		$("#url").text(window.location.pathname);
+		
+		// Fix the css locations dynamically
+		$("head link").each(function() {
+			for (var i=0; i<window.location.pathname.split(/\//g).length-2; i++)
+				$(this).attr("href", "../" + $(this).attr("href"));
+		});
+		
+	})
+</script>
+
+<p>
+	Sorry the page <b id="url"></b> could not be found on this server.
+</p>
+
+        </div>
+    </div>
+
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="./static/bootstrap/js/bootstrap.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+    <script src="./static/js/fancybox/source/jquery.fancybox.js"></script>
+    <script src="./static/js/fancybox/source/helpers/jquery.fancybox-media.js"></script>
+    <script src="./static/leaflet/leaflet.groupedlayercontrol.min.js"></script>
+    <script src="./static/js/main.js"></script>
+    
+</body>
+</html>

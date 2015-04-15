@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+<div id="map">
+    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menú</a>
+</div>
+
+    {% include 'proxecto.html' %}
+    {% include 'navegacion.html' %}
+    {% include 'asociacion.html' %}
+    {% include 'doazons.html' %}
+    {% include 'contacto.html' %}
+    {% include 'creditos.html' %}
+
+{% endblock %}
+
+{% block scripts %}
+    {{ block.super }}
+    <script src="{{ STATIC_URL }}/js/map.js"></script>
+    <script src="{{ STATIC_URL }}/js/video.js"></script>
+{% endblock %}

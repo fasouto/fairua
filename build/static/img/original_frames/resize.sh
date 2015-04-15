@@ -1,0 +1,1 @@
+for i in $( ls *.jpg); do convert -resize 20% $i $i; done
