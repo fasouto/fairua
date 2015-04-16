@@ -22,6 +22,10 @@ dt {
 }
 
 /* Style the leaflet controls */
+#profesionaisChk {
+  float: left;
+}
+
 .leaflet-control-layers-list {
   margin-right: 4px;
 }
@@ -34,9 +38,15 @@ dt {
   font-family: "Sanchez", Georgia, "Times New Roman", Times, serif;
 }
 
+.leaflet-popup-content-wrapper {
+  font-family: "Sanchez", Georgia, "Times New Roman", Times, serif;
+}
+
 #leaflet-control-layers-group-1 {
   margin-left: 15px;
 }
+
+
 
 #bottom-text {
   font-size: 12px;

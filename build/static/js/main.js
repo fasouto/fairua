@@ -20,4 +20,11 @@ $(document).ready(function() {
     $('.pull-down').each(function() {
         $(this).css('margin-top', $(this).parent().height()-$(this).height())
     });
+
+    // $("#leaflet-control-layers-group-1 span.leaflet-control-layers-group-name").prepend('<input id="profesionaisChk" type="checkbox" checked="">');
+
+    // $("#profesionaisChk").on("click", function () {
+    //     $('#leaflet-control-layers-group-1:input:checkbox').not(this).prop('checked', this.checked);
+    // });
+
 });
