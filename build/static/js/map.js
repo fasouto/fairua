@@ -91,7 +91,6 @@ function generatePopup(name, image, video, description) {
 
 L.control.groupedLayers(baseLayers, overlayMaps, {
   collapsed: isCollapsed,
-  exclusiveGroups: ["profesionales"],
   position: 'bottomright'
 }).addTo(map);
 
