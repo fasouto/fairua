@@ -114,6 +114,13 @@ dt {
   margin-right: 5px; 
 }
 
+.social-icons-video {
+  text-align: right;
+}
+
+.social-icons-video img {
+  width: 32px;
+}
 
 #social-icons {
     margin-right: 0px;

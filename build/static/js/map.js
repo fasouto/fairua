@@ -86,7 +86,13 @@ var overlayMaps = {
 
 // Returns the popup object
 function generatePopup(name, image, video, description) {
-  return L.popup({"minWidth":200, "maxWidth":200}).setContent('<h4>'+ name +'</h4><p>'+ description +'</p><a class="youtube-video" href="'+ video +'"><div class="blur"><img src="/static/img/mask.png" alt="" class="inner-image"/><img class="img-rounded video-cap img-responsive" src="/static/img/frames/'+ image + '" /></div></a>');
+  return L.popup({"minWidth":200, "maxWidth":200}).setContent(
+    '<h4>'+ name +'</h4><p>'+ description +'</p><a class="youtube-video" href="'+ video +'">\
+    <div class="blur"><img src="/static/img/mask.png" alt="" class="inner-image"/><img class="img-rounded video-cap img-responsive" src="/static/img/frames/'+ image + '" /></div></a>\
+    <div class="social-icons-video">\
+    <a href="https://www.facebook.com/sharer/sharer.php?u='+ video +'" class="popup"><img src="/static/img/social/facebook_small.png"></a>\
+    <a href="https://twitter.com/home?status=%23fairua%20'+ video +'" class="popup"><img src="/static/img/social/twitter_small.png"></a></div>'
+  );
 }
 
 L.control.groupedLayers(baseLayers, overlayMaps, {
