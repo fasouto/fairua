@@ -75,7 +75,7 @@ var overlayMaps = {
   "<span class='layerLabel'><img src='/static/img/iconos/vecinos.png' />Veciñanza</span>": fairuaLayers["vecinos"]["layer"],
   "<span class='layerLabel'><img src='/static/img/iconos/patrimonio.png' />Patrimonio</span>": fairuaLayers["patrimonio"]["layer"]
   },
-  "<h4>Profesionais</h4>": {
+  "<input id='profesionaisChk' type='checkbox' checked='true'><h4>Profesionais</h4>": {
     "<span class='layerLabel'><img src='/static/img/iconos/eco.png' />Ecoloxía</span>": fairuaLayers["eco"]["layer"],
     "<span class='layerLabel'><img src='/static/img/iconos/lecer.png' />Lecer</span>": fairuaLayers["lecer"]["layer"],
     "<span class='layerLabel'><img src='/static/img/iconos/profesionales.png' />Servizos</span>": fairuaLayers["servicios"]["layer"],

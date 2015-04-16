@@ -21,10 +21,24 @@ $(document).ready(function() {
         $(this).css('margin-top', $(this).parent().height()-$(this).height())
     });
 
-    // $("#leaflet-control-layers-group-1 span.leaflet-control-layers-group-name").prepend('<input id="profesionaisChk" type="checkbox" checked="">');
+    // FIXME
+    $("#profesionaisChk").on("click", function () {
+        console.log("caca");
+        console.log(this.checked);
+        $('#leaflet-control-layers-group-1 :input:checkbox').not(this).prop('checked', this.checked);
+        // Chapuza de espanto, llamar a trigger bien
+        $('#leaflet-control-layers-group-1 > label:nth-child(2) > input').trigger('click');
+        $('#leaflet-control-layers-group-1 > label:nth-child(2) > input').trigger('click');
+    });
 
-    // $("#profesionaisChk").on("click", function () {
-    //     $('#leaflet-control-layers-group-1:input:checkbox').not(this).prop('checked', this.checked);
-    // });
-
+    // If all the checkboxes are checked or unchecked parent must change
+    // Estos selectores tambien son una chapuza, los tenemos temporalmente a ver si esta funcioalidad es necesaria
+    $('#leaflet-control-layers-group-1 .leaflet-control-layers-selector:checkbox').on("change", function(){
+        if ($('#leaflet-control-layers-group-1 .leaflet-control-layers-selector:checkbox:checked').length == 5) {
+            $("#profesionaisChk").prop('checked', true);
+        }
+        if ($('#leaflet-control-layers-group-1 .leaflet-control-layers-selector:checkbox:checked').length == 0) {
+            $("#profesionaisChk").prop('checked', false);
+        }
+    });
 });
