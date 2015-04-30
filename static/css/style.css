@@ -1,12 +1,67 @@
-/*!
- * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-/* Toggle Styles */
-
+/* Page skeleton */
 html, body, #wrapper {
+    height: 100%;
+}
+
+#wrapper {
+  padding-left: 0;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#page-content-wrapper {
+    height: 100%;
+}
+
+#wrapper.toggled {
+  padding-left: 250px;
+}
+
+
+#sidebar-wrapper {
+  margin-top: 20px;
+    z-index: 1000;
+    position: fixed;
+    left: 250px;
+    width: 0;
+    height: 100%;
+    margin-left: -250px;
+    overflow-y: auto;
+    background: #FFF;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    width: 100%;
+    position: absolute;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    position: absolute;
+    margin-right: -250px;
+}
+
+#sidebar-footer {
+  height: 100px;
+  font-size: 12px;
+  text-align: center;
+  background-color: white;
+}
+
+#map {
+    top:0;
+    left: 0;
+    position: absolute;
+    width: 100%;
     height: 100%;
 }
 
@@ -16,12 +71,37 @@ a:focus {
   color: black !important;
 }
 
-dt {
-  margin-top: 9px;
-  font-size: 1.2em;
+#logo {
+  display: none;
+  width:67%;
+  margin: 15% 15%;
+  padding-bottom: 40px;
 }
 
-/* Style the leaflet controls */
+#menu-toggle {
+  position: relative; 
+  left: 10px; 
+  top: 10px; 
+  z-index: 999;
+  display: inline;
+}
+
+
+/* Portada */
+#portada {
+  color:white;
+  text-align: center;
+}
+
+#logoportada {
+  width: 200px;
+  margin:0 auto;
+  padding-top: 10%;
+}
+
+
+/* Leaflet controls */
+
 #profesionaisChk {
   float: left;
   margin-left: -8px;
@@ -49,39 +129,31 @@ dt {
 }
 
 
-
-#bottom-text {
-  font-size: 12px;
-  text-align: center;
-  background-color: white;
-}
+/* Pages */
 
 #paypal-form {
   margin: 25px 0px;
   text-align: center;
 }
 
-#page-content-wrapper {
-    height: 100%;
+#navegacion dt {
+  margin-top: 9px;
+  font-size: 1.2em;
 }
+
+/* Footer */
 
 .cc-image { 
   width: 30%;
 }
 
-#map {
-    top:0;
-    left: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-}
 
 #creditos li {
   margin: 0.5em 0; 
 }
 
-/* BLUR */
+/* Map infobox */
+
 .inner-image {
   position: absolute;
   top: -5px;
@@ -104,6 +176,10 @@ dt {
   -webkit-filter: blur(1px);
 }
 
+.video-cap {
+  width: 100%;
+  margin: 0 auto;
+}
 
 .nodisplay {
   display:none;
@@ -136,74 +212,12 @@ dt {
   width: 40px;
 }
 
-.video-cap {
-  width: 100%;
-  margin: 0 auto;
-}
-
 .social {
   padding-top: 40px;
 }
 
-#logo {
-  width:67%;
-  margin: 15% 15%;
-  padding-bottom: 40px;
-}
-
-#menu-toggle {
-  position: relative; 
-  left: 10px; 
-  top: 10px; 
-  z-index: 999;
-  display: inline;
-}
-
-#wrapper {
-    padding-left: 0;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#wrapper.toggled {
-    padding-left: 250px;
-}
-
-#sidebar-wrapper {
-    z-index: 1000;
-    position: fixed;
-    left: 250px;
-    width: 0;
-    height: 100%;
-    margin-left: -250px;
-    overflow-y: auto;
-    background: #FFF;
-    -webkit-transition: all 0.5s ease;
-    -moz-transition: all 0.5s ease;
-    -o-transition: all 0.5s ease;
-    transition: all 0.5s ease;
-}
-
-#wrapper.toggled #sidebar-wrapper {
-    width: 250px;
-}
-
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-}
-
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-
 /* Sidebar Styles */
-
-.sidebar-nav {
-    position: absolute;
+#sidebar-nav {
     top: 0;
     width: 250px;
     margin: 0;
@@ -211,34 +225,38 @@ dt {
     list-style: none;
 }
 
-.sidebar-nav li {
+#sidebar-nav li {
     text-indent: 20%;
     line-height: 1.7em;
 }
 
-.sidebar-nav li a {
+#sidebar-nav li a {
     display: block;
     text-decoration: none;
 }
 
-.sidebar-nav li a:hover {
+#sidebar-nav li a:hover {
     text-decoration: none;
     color: black;
 }
 
-.sidebar-nav li a:active,
-.sidebar-nav li a:focus {
+#sidebar-nav li a:active,
+#sidebar-nav li a:focus {
     text-decoration: none;
 }
 
+/* Media queries */
 
 @media(min-width:768px) {
+    #logo {
+      display: block;
+    }
+
     #wrapper {
         padding-left: 250px;
     }
 
     #menu-toggle {
-
       display: none;
     }
 
@@ -247,7 +265,9 @@ dt {
     }
 
     #sidebar-wrapper {
+        margin-top: 0px;
         width: 250px;
+        height: 100%;
     }
 
     #wrapper.toggled #sidebar-wrapper {
@@ -263,8 +283,4 @@ dt {
         position: relative;
         margin-right: 0;
     }
-}
-
-@media(max-width:768px) {
-    
 }

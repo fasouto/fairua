@@ -31,6 +31,11 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>portada.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>proxecto.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>

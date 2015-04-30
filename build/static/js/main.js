@@ -35,7 +35,7 @@ $(document).ready(function() {
 
     // Helper to push content to bottom
     $('.pull-down').each(function() {
-        $(this).css('margin-top', $(this).parent().height()-$(this).height())
+        $(this).css('padding-top', $(this).parent().height() - $(this).height() - $("#sidebar-nav").height() - 150)
     });
 
     // FIXME

@@ -61,7 +61,7 @@
 <body>
     <div id="wrapper">
         <div id="sidebar-wrapper">
-            <ul class="sidebar-nav">
+            <ul id="sidebar-nav">
                 <li class="sidebar-brand">
                     <a href="/">
                         <img id="logo" class="img-responsive" src="{{ STATIC_URL }}/img/logo.png">
@@ -75,7 +75,7 @@
                 <li><a href="#creditos" class="links">CRÉDITOS</a></li>
             </ul>
 
-            <div id="bottom-text" class="pull-down">
+            <footer id="sidebar-footer" class="pull-down">
                 <p class="social">
                     COMPARTE #FAIRÚA:
                     <ul id="social-icons">
@@ -86,7 +86,7 @@
                 </p>
                 <p><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/deed.es_ES"><img src="{{ STATIC_URL }}/img/by-nc-nd.png" class="cc-image"></a>
                 <p><a href="https://www.facebook.com/cascovelloaltovigo">Asociación Cultural Barrio Alto do Casco Vello de Vigo</a>
-            </div>
+            </footer>
         </div>
         <div id="page-content-wrapper">
         {% block content %}
