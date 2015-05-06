@@ -59,28 +59,29 @@
     
 </head>
 <body>
-	<div id="wrapperVideo">
-		<div class="container">
-			<div id="portada" class="row">
-				<div class="col-md-8 col-md-offset-2">
-				    <img id="logoportada" class="img-responsive" src="./static/img/logo.png">
-				    <h3>
-				    	Fai Rúa nace coa vontade de rexistrar a memoria colectiva de parte do barrio vello de Vigo, en pleno proceso de transformación.
-				    </h3>
-				    <a href="http://fairua.com" class="btn btn-primary btn-lg">ENTRAR</a>
-			    </div>
-		    </div>
-	    </div>
+	<div id="background-video" class="background-video">
+        <img src="/static/img/frames/Lecer_Uf.jpg" alt="" class="placeholder-image">
 	</div>
+        <div class="container">
+            <div id="portada" class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <img id="logoportada" class="img-responsive shadowed" src="./static/img/logo.png">
+                    <h3 class="text-shadow">
+                        Fai Rúa é un proxecto audiovisual que nace coa vontade de rexistrar a memoria colectiva do barrio vello de Vigo.
+                    </h3>
+                    <a href="http://fairua.com" class="btn btn-primary btn-lg">ENTRAR</a>
+                </div>
+            </div>
+        </div>
 
 
 	 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	 <script src="./static/js/jquery.tubular.1.0.js"></script>
+	 <script src="./static/js/jquery.youtubebackground.js"></script>
 	 <script type="text/javascript">
-		$('#wrapperVideo').tubular({
-		    // fitToBackground: true,
-		    // mute: true,
-		    videoId: 'S-eeM7IZrXo'
+		$('#background-video').YTPlayer({
+		    fitToBackground: true,
+		    mute: true,
+		    videoId: 'i0uOH1qCWGk'
 		});
 	 </script>
 </body>

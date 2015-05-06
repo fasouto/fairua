@@ -91,6 +91,7 @@ a:focus {
 #portada {
   color:white;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 #logoportada {
@@ -99,7 +100,50 @@ a:focus {
   padding-top: 10%;
 }
 
+.background-video {
+  background-position: top center;
+  background-repeat: no-repeat;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
 
+.placeholder-image {
+  height: 100%;
+  left: 0;
+  min-height: 100%;
+  min-width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+
+  opacity: 1;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+.loaded .ytplayer-container {
+  display: block;
+}
+
+.loaded .placeholder-image {
+  opacity: 0;
+}
+
+.shadowed {
+    -webkit-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.4));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}
+
+.text-shadow {
+  text-shadow: 0px 0px 20px rgba(0,0,0,0.7);
+}
 /* Leaflet controls */
 
 #profesionaisChk {
