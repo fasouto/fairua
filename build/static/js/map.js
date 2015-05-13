@@ -80,18 +80,18 @@ var overlayMaps = {
     "<span class='layerLabel'><img src='/static/img/iconos/lecer.png' />Lecer</span>": fairuaLayers["lecer"]["layer"],
     "<span class='layerLabel'><img src='/static/img/iconos/profesionales.png' />Servizos</span>": fairuaLayers["servicios"]["layer"],
     "<span class='layerLabel'><img src='/static/img/iconos/creatividad.png' />Creatividade</span>": fairuaLayers["creatividade"]["layer"],
-    "<span class='layerLabel'><img src='/static/img/iconos/monedas.png' />Venda</span>": fairuaLayers["venda"]["layer"],
+    "<span class='layerLabel'><img src='/static/img/iconos/monedas.png' />Venda</span>": fairuaLayers["venda"]["layer"]
   }
 };
 
 // Returns the popup object
 function generatePopup(name, image, video, description) {
   return L.popup({"minWidth":200, "maxWidth":200}).setContent(
-    '<h4>'+ name +'</h4><p>'+ description +'</p><a class="youtube-video" href="'+ video +'">\
-    <div class="blur"><img src="/static/img/mask.png" alt="" class="inner-image"/><img class="img-rounded video-cap img-responsive" src="/static/img/frames/'+ image + '" /></div></a>\
-    <div class="social-icons-video">\
-    <a href="https://www.facebook.com/sharer/sharer.php?u='+ video +'" class="popup"><img src="/static/img/social/facebook_small.png"></a>\
-    <a href="https://twitter.com/home?status=%23fairua%20'+ video +'" class="popup"><img src="/static/img/social/twitter_small.png"></a></div>'
+    '<h4>'+ name +'</h4><p>'+ description +'</p><a class="youtube-video" href="'+ video +'">' +
+    '<div class="blur"><img src="/static/img/mask.png" alt="" class="inner-image"/><img class="img-rounded video-cap img-responsive" src="/static/img/frames/'+ image + '" /></div></a>' + 
+    '<div class="social-icons-video">' +
+    '<a href="https://www.facebook.com/sharer/sharer.php?u='+ video +'" class="popup"><img src="/static/img/social/facebook_small.png"></a>' +
+    '<a href="https://twitter.com/home?status=%23fairua%20'+ video +'" class="popup"><img src="/static/img/social/twitter_small.png"></a></div>'
   );
 }
 
