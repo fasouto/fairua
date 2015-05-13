@@ -25,4 +25,4 @@ Además Fai Rúa usa as seguintes tecnoloxías:
 
 ## Licencia
 
-O código está baixo a licencia [MIT](http://opensource.org/licenses/MIT) é tanco os vídeos coma as imaxes teñen licencia [Creative Commons Atribución-Non comercial-Non derivadas 4.0.](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.gl)
+O código está baixo a licencia [MIT](http://opensource.org/licenses/MIT) é tanto os vídeos coma as imaxes teñen licencia [Creative Commons Atribución-Non comercial-Non derivadas 4.0.](https://creativecommons.org/licenses/by-nc-nd/4.0/deed.gl)
