@@ -1,6 +1,6 @@
-# fairua
+# Fai Rúa
 
-“Fai Rúa” nace coa vontade de rexistrar a memoria colectiva de parte do barrio vello de Vigo, en pleno proceso de transformación, e de rescatar aquelas historias e persoas que construíron a súa identidade. A través de distintas pezas audiovisuais o espectador poderá gozar dun paseo virtual por esta parte da cidade.
+“Fai Rúa” é un proxecto audiovisual que nace coa vontade de rexistrar a memoria colectiva de parte do barrio vello de Vigo, en pleno proceso de transformación, e de rescatar aquelas historias e persoas que construíron a súa identidade. A través de distintas pezas audiovisuais o espectador poderá gozar dun paseo virtual por esta parte da cidade.
 
 Podes visitar o sitio en http://fairua.com
 
