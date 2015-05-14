@@ -92,12 +92,15 @@ a:focus {
   color:white;
   text-align: center;
   margin-bottom: 20px;
+  position: absolute;
+  z-index: 99999;
 }
 
 #logoportada {
   width: 200px;
   margin:0 auto;
   padding-top: 15%;
+  z-index: 9999;
 }
 
 .background-video {
@@ -109,6 +112,7 @@ a:focus {
   position: fixed;
   right: 0;
   top: 0;
+  z-index: -1000;
 }
 
 .placeholder-image {
@@ -132,13 +136,6 @@ a:focus {
 
 .loaded .placeholder-image {
   opacity: 0;
-}
-
-.shadowed {
-    -webkit-filter: drop-shadow(0px 0px 20px rgba(0,0,0,0.4));
-    filter: url(#drop-shadow);
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
 
 .text-shadow {
