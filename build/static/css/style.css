@@ -88,6 +88,7 @@ a:focus {
   top: 10px; 
   z-index: 999;
   display: inline;
+  color:#96cfc9;
 }
 
 
@@ -98,6 +99,11 @@ a:focus {
   margin-bottom: 20px;
   position: absolute;
   z-index: 99999;
+  margin-left:-25px;
+}
+
+#btn-entrar {
+  margin-top: 20px;
 }
 
 #logoportada {
@@ -281,6 +287,12 @@ a:focus {
     text-decoration: none;
 }
 
+/* Error page */
+#error-page {
+  padding-top: 10%;
+  text-align: center;
+}
+
 /* Media queries */
 
 @media(min-width:768px) {
@@ -319,4 +331,17 @@ a:focus {
         position: relative;
         margin-right: 0;
     }
+}
+
+
+@media(max-width:450px) {
+    #logoportada {
+      width: 100px;
+    }
+    .text-shadow {
+      font-size: 140%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
 }
