@@ -76,7 +76,6 @@ a:focus {
 }
 
 #logo {
-  display: none;
   width:67%;
   margin: 15% 15%;
   padding-bottom: 40px;
@@ -344,4 +343,10 @@ a:focus {
       margin-right: 5%;
     }
 
+}
+
+@media(max-height:500px) {
+  #logo {
+   display: none; 
+  }
 }

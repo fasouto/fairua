@@ -86,7 +86,8 @@ var overlayMaps = {
 
 // Returns the popup object
 function generatePopup(name, image, video, description) {
-  return L.popup({"minWidth":200, "maxWidth":200}).setContent(
+  var leftTop = new L.Point(0, 150)
+  return L.popup({"minWidth":200, "maxWidth":200, "autoPan":true, "autoPanPaddingTopLeft":leftTop}).setContent(
     '<h4>'+ name +'</h4><p>'+ description +'</p><a class="youtube-video" href="'+ video +'">' +
     '<div class="blur"><img src="/static/img/mask.png" alt="" class="inner-image"/><img class="img-rounded video-cap img-responsive" src="/static/img/frames/'+ image + '" /></div></a>' + 
     '<div class="social-icons-video">' +
