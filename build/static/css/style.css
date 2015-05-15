@@ -3,6 +3,10 @@ html, body, #wrapper {
     height: 100%;
 }
 
+label {
+  font-weight: normal !important;
+}
+
 #wrapper {
   padding-left: 0;
   -webkit-transition: all 0.5s ease;
@@ -169,6 +173,9 @@ a:focus {
   margin-left: 15px;
 }
 
+.leaflet-popup-content p {
+  font-size: 13px
+}
 
 /* Pages */
 
@@ -203,18 +210,6 @@ a:focus {
 
 .blur {
   position: relative;
-}
-
-.blur img {
-  -webkit-transition: all 1s ease;
-     -moz-transition: all 1s ease;
-       -o-transition: all 1s ease;
-      -ms-transition: all 1s ease;
-          transition: all 1s ease;
-}
- 
-.blur img:hover {
-  -webkit-filter: blur(1px);
 }
 
 .video-cap {
