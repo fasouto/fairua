@@ -390,9 +390,9 @@
                 ]
             },
             "properties": {
-                "name": "O Olivo",
+                "name": "A Oliveira de Vigo",
                 "type": "patrimonio",
-                "description": "Símbolo da cidade, protagonista da heráldica, o Olivo preside maxestuoso o Paseo de Alfonso dende hai case 200 anos.",
+                "description": "Símbolo da cidade, protagonista da heráldica, A Oliveira preside maxestuoso o Paseo de Alfonso dende hai case 200 anos.",
                 "image": "Patrimonio_1_O_Olivo.jpg",
                 "video": "https://www.youtube.com/watch?v=PCLSk8UyHXo&index=8&list=PLy4BsAAk04Zn42fD7gJZbBPj6HdYWqUGQ&index=8"
             }
@@ -518,7 +518,7 @@
             "properties": {
                 "name": "Pedro Román Canción",
                 "type": "vecinos",
-                "description": "Pedro Román, veciño do barrio, canta ao poeta Eugenio d'Ors dende a súa azotea.",
+                "description": "Pedro Román, veciño do barrio, canta ao poeta Eugenio d'Ors dende a azotea do edificio Asfal.",
                 "image": "Vecinos_4_Pedro_Roman_Cancion.jpg",
                 "video": "https://www.youtube.com/watch?v=lzf2mCwMM7s&index=6&list=PLy4BsAAk04ZmwJJsJsYS0knnJdaFdq9sg"
             }
