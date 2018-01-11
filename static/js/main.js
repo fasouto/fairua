@@ -40,8 +40,6 @@ $(document).ready(function() {
 
     // FIXME
     $("#profesionaisChk").on("click", function () {
-        console.log("caca");
-        console.log(this.checked);
         $('#leaflet-control-layers-group-1 :input:checkbox').not(this).prop('checked', this.checked);
         // Chapuza de espanto, llamar a trigger bien
         $('#leaflet-control-layers-group-1 > label:nth-child(2) > input').trigger('click');
