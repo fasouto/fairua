@@ -1,0 +1,34 @@
+/* TEAM */
+Documentación e producción: Ramón Viéitez 
+Site: http://www.quetipos.com/
+Twitter: ramonvieitez
+Location: Vigo
+
+Realizador audiovisual: Roi Guitián
+Site: http://gingko.gal
+Twitter: roiguitian
+Location: Vigo
+
+Axudante de dirección e redactora: María Lobo
+Site: http://gingko.gal
+Twitter: wider_sight
+Location: Vigo
+
+Deseño: Noemí Díaz 
+Site: http://www.itrynottothink.com/
+Twitter: itrynottothink
+Location: Vigo
+
+Programador: Fabio Souto
+Site: http://fabiosouto.me/
+Twitter: fsoutomo
+Location: Ourense
+
+
+/* SITE */
+Last update: 2018-01-31
+Standards: HTML5, CSS3
+Source code: https://github.com/fasouto/fairua
+Languages: JavaScript
+Components: jQuery
+Software: cactus, gulp, vim, git, bash
