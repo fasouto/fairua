@@ -6,7 +6,7 @@ Podes visitar o sitio en http://fairua.com
 
 ## Instalación
 
-Fai Rúa esta realizado en [Cactus](https://github.com/koenbok/cactus) e aloxado en [github pages](https://pages.github.com/). Para instalar, simplemente tes que clonar o repositorio:
+Fai Rúa esta realizado en [Cactus](https://github.com/koenbok/cactus) e aloxado en [Netlify](https://www.netlify.com/). Para instalar, simplemente tes que clonar o repositorio:
 
     git clone git@github.com:fasouto/fairua.git
 
