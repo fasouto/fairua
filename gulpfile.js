@@ -21,8 +21,9 @@ gulp.task('js', function(){
      'node_modules/leaflet-groupedlayercontrol/dist/*.js',
      'static/js/fancybox/source/jquery.fancybox.js',
      'static/js/fancybox/source/helpers/jquery.fancybox-media.js',
-     'static/js/map.js',
-     'static/js/main.js'
+     'static/js/jquery.youtubebackground.js',
+     'static/js/main.js',
+     'static/js/map.js'
     ])
  .pipe(uglify())
  .pipe(concat('build.min.js'))

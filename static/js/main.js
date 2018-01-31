@@ -1,4 +1,12 @@
 $(document).ready(function() {
+    if(document.getElementById("background-video") != null){
+        $('#background-video').YTPlayer({
+            fitToBackground: true,
+            mute: true,
+            videoId: 'i0uOH1qCWGk'
+        });
+    }
+
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
