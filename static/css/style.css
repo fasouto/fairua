@@ -20,11 +20,11 @@ label {
 }
 
 #wrapper.toggled {
-  padding-left: 250px;
+  /* padding-left: 250px; */
 }
 
 #sidebar-wrapper {
-  margin-top: 20px;
+  /* margin-top: 20px; */
   z-index: 1000;
   position: fixed;
   left: 250px;
@@ -263,6 +263,10 @@ a:focus {
 #sidebar-nav li {
   text-indent: 20%;
   line-height: 1.7em;
+}
+
+.menu-opened { 
+  left: 260px !important;
 }
 
 #sidebar-nav li a {

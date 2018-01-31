@@ -10,6 +10,11 @@ $(document).ready(function() {
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+        // La chapuza del siglo, FIXME
+        var sidebarW = parseInt($('#sidebar-wrapper').css('width'));
+        $("#menu-toggle").animate({
+            left: 260 - sidebarW
+        }, 400)
     });
 
     $(".links").fancybox({
