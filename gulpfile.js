@@ -17,6 +17,7 @@
 gulp.task('js', function(){
  return gulp.src([
      'node_modules/jquery/dist/jquery.js',
+     'node_modules/lazysizes/lazysizes.js',
      'node_modules/leaflet/dist/leaflet.js',
      'node_modules/leaflet-groupedlayercontrol/dist/*.js',
      'static/js/fancybox/source/jquery.fancybox.js',
