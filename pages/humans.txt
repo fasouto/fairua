@@ -1,3 +1,5 @@
+{% verbatim %}
+
 /* TEAM */
 Documentación e producción: Ramón Viéitez 
 Site: http://www.quetipos.com/
@@ -32,3 +34,5 @@ Source code: https://github.com/fasouto/fairua
 Languages: JavaScript
 Components: jQuery
 Software: cactus, gulp, vim, git, bash
+
+{% endverbatim %}
