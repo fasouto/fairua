@@ -148,8 +148,12 @@ a:focus {
 /* Leaflet controls */
 #profesionaisChk {
   float: left;
-  margin-left: -8px;
-  margin-right: 10px;
+  margin-left: -15px;
+  margin-right: 8px;
+}
+
+.leaflet-control-layers-overlays h4 {
+  display: inline;
 }
 
 .leaflet-control-layers-list {
@@ -189,7 +193,7 @@ a:focus {
 
 /* Footer */
 .cc-image { 
-  width: 30%;
+  width: 35%;
 }
 
 

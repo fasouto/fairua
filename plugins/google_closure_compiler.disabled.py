@@ -10,6 +10,6 @@ def postBuild(site):
         root_name = script.rsplit(',', 1)[0]
         dest = "%s.min.js" % root_name
         try:
-            subprocess.check_call(['closure-compiler', '--js', script, '--js_output_file', dest])
+            subprocess.check_call(['google-closure-compiler', '--js', script, '--js_output_file', dest])
         except subprocess.CalledProcessError:
-            print 'JS Compile step failed.'
+            print('JS Compile step failed.')

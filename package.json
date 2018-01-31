@@ -1,0 +1,35 @@
+{
+  "name": "fairua",
+  "version": "1.0.0",
+  "description": "“Fai Rúa” é un proxecto audiovisual que nace coa vontade de rexistrar a memoria colectiva de parte do barrio vello de Vigo, en pleno proceso de transformación, e de rescatar aquelas historias e persoas que construíron a súa identidade. A través de distintas pezas audiovisuais o espectador poderá gozar dun paseo virtual por esta parte da cidade.",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^1.12.4",
+    "leaflet": "^1.3.1",
+    "leaflet-groupedlayercontrol": "^0.6.0",
+    "normalize.css": "^7.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-css-url-to-absolute": "^1.0.1",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fasouto/fairua.git"
+  },
+  "author": "Fabio Souto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fasouto/fairua/issues"
+  },
+  "homepage": "https://github.com/fasouto/fairua#readme"
+}

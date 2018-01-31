@@ -2,3 +2,6 @@ config.json
 .build/
 *.pyc
 _
+node_modules/
+static/build/
+package-lock.json
