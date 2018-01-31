@@ -16,11 +16,16 @@ e executar o servidor incluído en Cactus
     
 podes visitar a web en `http://127.0.0.1:8000/`
 
+Se fas cambios no CSS ou JavaScript precisas instalar as dependencias e crear a `build` con gulp:
+
+    npm install
+    gulp
+
 
 Además Fai Rúa usa as seguintes tecnoloxías:
 
 - [Bootstrap 3](http://getbootstrap.com/css/) para o grid é a compatibilidade entre navegadores. Non fai uso do javascript.
-- [LESS](http://lesscss.org/) como preprocesador CSS
+- [Gulp](https://gulpjs.com/) para compilar e minimizar o JavaScript e CSS
 - [Leaflet](http://leafletjs.com/) para o renderizado dos mapas, usando [Here](https://developer.here.com/) como proveedor.
 
 ## Licencia
