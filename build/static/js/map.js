@@ -125,31 +125,12 @@ if(document.getElementById("map") != null){
     }
   });
 
-  var imageSources = []  // This is used to cache the images later
   // Fetch the JSON data and add it to the map
   $.getJSON("/static/data/fairua.geojson", function (data) {
     pointsData.addData(data);
-
-    for (var key in data.features){
-      imageSources.push('/static/img/frames/' + data.features[key].properties.image);
-    }
   });
 
   pointsData.addTo(map);
-
-  // We'll need to cache the images
-  function preloadImages(srcs) {
-    if (!preloadImages.cache) {
-        preloadImages.cache = [];
-    }
-    var img;
-    for (var i = 0; i < srcs.length; i++) {
-        img = new Image();
-        img.src = srcs[i];
-        preloadImages.cache.push(img);
-    }
-  }
-  //preloadImages(imageSources);
 
   // Handle videos
   $('.youtube-video')
