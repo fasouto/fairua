@@ -8,7 +8,7 @@ if(document.getElementById("map") != null){
     var isCollapsed = false;
   }
 
-  var HERE_satelliteDay = L.tileLayer('http://{s}.{base}.maps.cit.api.here.com/maptile/2.1/maptile/{mapID}/satellite.day/{z}/{x}/{y}/256/png8?app_id={app_id}&app_code={app_code}', {
+  var HERE_satelliteDay = L.tileLayer('https://{s}.{base}.maps.cit.api.here.com/maptile/2.1/maptile/{mapID}/satellite.day/{z}/{x}/{y}/256/png8?app_id={app_id}&app_code={app_code}', {
           attribution: 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
           subdomains: '1234',
           mapID: 'newest',
@@ -19,7 +19,7 @@ if(document.getElementById("map") != null){
           maxZoom: 20
       });
 
-  var HERE_terrainDay = L.tileLayer('http://{s}.{base}.maps.cit.api.here.com/maptile/2.1/maptile/{mapID}/terrain.day/{z}/{x}/{y}/256/png8?app_id={app_id}&app_code={app_code}', {
+  var HERE_terrainDay = L.tileLayer('https://{s}.{base}.maps.cit.api.here.com/maptile/2.1/maptile/{mapID}/terrain.day/{z}/{x}/{y}/256/png8?app_id={app_id}&app_code={app_code}', {
           attribution: 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
           subdomains: '1234',
           mapID: 'newest',
@@ -125,7 +125,7 @@ if(document.getElementById("map") != null){
     }
   });
 
-  var imageSources = []
+  var imageSources = []  // This is used to cache the images later
   // Fetch the JSON data and add it to the map
   $.getJSON("/static/data/fairua.geojson", function (data) {
     pointsData.addData(data);
@@ -149,7 +149,7 @@ if(document.getElementById("map") != null){
         preloadImages.cache.push(img);
     }
   }
-  preloadImages(imageSources);
+  //preloadImages(imageSources);
 
   // Handle videos
   $('.youtube-video')
