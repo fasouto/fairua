@@ -43,7 +43,7 @@ gulp.task('styles', function(){
 });
 */
 
-// Compress and minimize CSS
+// Compress and minimize CSS files
 gulp.task('styles', function(){
  return gulp.src([
      'static/css/style.css',
