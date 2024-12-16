@@ -8,27 +8,38 @@ if(document.getElementById("map") != null){
     var isCollapsed = false;
   }
 
-  var HERE_satelliteDay = L.tileLayer('https://{s}.{base}.maps.cit.api.here.com/maptile/2.1/maptile/{mapID}/satellite.day/{z}/{x}/{y}/256/png8?app_id={app_id}&app_code={app_code}', {
-          attribution: 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
-          subdomains: '1234',
-          mapID: 'newest',
-          app_id: 'tVoLZRQkQHtlD1UcvnGU',
-          app_code: 'SWBeLBAMGDaCTC0RQDD7Rw',
-          base: 'aerial',
-          minZoom: 0,
-          maxZoom: 20
-      });
+  // var HERE_satelliteDay = L.tileLayer('https://{s}.{base}.maps.cit.api.here.com/maptile/2.1/maptile/{mapID}/satellite.day/{z}/{x}/{y}/256/png8?app_id={app_id}&app_code={app_code}', {
+  //         attribution: 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
+  //         subdomains: '1234',
+  //         mapID: 'newest',
+  //         app_id: 'tVoLZRQkQHtlD1UcvnGU',
+  //         app_code: 'SWBeLBAMGDaCTC0RQDD7Rw',
+  //         base: 'aerial',
+  //         minZoom: 0,
+  //         maxZoom: 20
+  //     });
 
-  var HERE_terrainDay = L.tileLayer('https://{s}.{base}.maps.cit.api.here.com/maptile/2.1/maptile/{mapID}/terrain.day/{z}/{x}/{y}/256/png8?app_id={app_id}&app_code={app_code}', {
-          attribution: 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
-          subdomains: '1234',
-          mapID: 'newest',
-          app_id: 'tVoLZRQkQHtlD1UcvnGU',
-          app_code: 'SWBeLBAMGDaCTC0RQDD7Rw',
-          base: 'aerial',
-          minZoom: 0,
-          maxZoom: 20
-      });
+  // var HERE_terrainDay = L.tileLayer('https://{s}.{base}.maps.cit.api.here.com/maptile/2.1/maptile/{mapID}/terrain.day/{z}/{x}/{y}/256/png8?app_id={app_id}&app_code={app_code}', {
+  //         attribution: 'Map &copy; 1987-2014 <a href="http://developer.here.com">HERE</a>',
+  //         subdomains: '1234',
+  //         mapID: 'newest',
+  //         app_id: 'tVoLZRQkQHtlD1UcvnGU',
+  //         app_code: 'SWBeLBAMGDaCTC0RQDD7Rw',
+  //         base: 'aerial',
+  //         minZoom: 0,
+  //         maxZoom: 20
+  //     });
+
+  var HERE_satelliteDay = L.tileLayer('http://{s}.google.com/vt/lyrs=s&x={x}&y={y}&z={z}', {
+    maxZoom: 20,
+    subdomains: ['mt0', 'mt1', 'mt2', 'mt3'],
+    attribution: '&copy; Google'
+  });
+
+  var HERE_terrainDay = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors',
+  });
 
   var anecdotasLayer = L.layerGroup([]),
     creatividadeLayer = L.layerGroup([]),

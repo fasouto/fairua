@@ -4,14 +4,13 @@
     npm install --save-dev gulp gulp-minify-css gulp-concat gulp-uglify gulp-autoprefixer gulp-sass
 
  */
-
- var gulp = require('gulp'),
- minifyCSS = require('gulp-minify-css'),
- concat = require('gulp-concat')
- uglify = require('gulp-uglify')
- prefix = require('gulp-autoprefixer')
- sass = require('gulp-sass');
- cssUrlToAbsolute = require('gulp-css-url-to-absolute')
+var gulp = require('gulp'),
+minifyCSS = require('gulp-clean-css'),  // Changed from gulp-minify-css
+concat = require('gulp-concat'),
+uglify = require('gulp-uglify'),
+prefix = require('gulp-autoprefixer'),
+sass = require('gulp-sass')(require('sass')),  // Updated sass initialization
+cssUrlToAbsolute = require('gulp-css-url-to-absolute');
  
 // Minimizes JS
 gulp.task('js', function(){
@@ -60,10 +59,6 @@ gulp.task('styles', function(){
  .pipe(gulp.dest('static/build/css'))
 });
 
-gulp.task('default', function() {
- gulp.run('styles')
- gulp.run('js')
- gulp.watch('static/css/*.css', function(){
-     gulp.run('styles')
- })
-});
+gulp.task('default', gulp.series('styles', 'js', function() {
+    gulp.watch('static/css/*.css', gulp.series('styles'));
+}));
